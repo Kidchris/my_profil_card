@@ -10,13 +10,52 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: SafeArea(
-          child: Container(
-            height: 300,
-            width: 300,
-            padding: const EdgeInsets.all(20.0),
-            color: Colors.red,
-            child: Image.asset('./assets/chris.jpg'),
+        body: Center(
+          child: SafeArea(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CircleAvatar(
+                    backgroundImage: AssetImage("./assets/chris.jpg"),
+                    radius: 100.0,
+                  ),
+                  Text(
+                    "Kinda Christian",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  Divider(
+                    thickness: 3.0,
+                    indent: 150,
+                    endIndent: 150,
+                    color: Color(0xFFFFFFFF),
+                  ),
+                  Text(
+                    "Passionate Data Scientist",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  Card(
+                    child: ListTile(
+                      // tileColor: Colors.white,
+                      iconColor: Colors.teal,
+                      textColor: Colors.teal,
+                      leading: Icon(
+                        Icons.phone,
+                      ),
+                      title: Text("(00226) 64373649/ 62686231"),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      // tileColor: Colors.white,
+                      iconColor: Colors.teal,
+                      textColor: Colors.teal,
+                      leading: Icon(
+                        Icons.mail,
+                      ),
+                      title: Text("kidchris960@gmail.com"),
+                    ),
+                  ),
+                ]),
           ),
         ),
       ),
