@@ -33,26 +33,34 @@ class MyApp extends StatelessWidget {
                     "Passionate Data Scientist",
                     style: TextStyle(color: Colors.white),
                   ),
-                  Card(
-                    child: ListTile(
-                      // tileColor: Colors.white,
-                      iconColor: Colors.teal,
-                      textColor: Colors.teal,
-                      leading: Icon(
-                        Icons.phone,
+                  Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 50.0, vertical: 8.0),
+                    child: Card(
+                      child: ListTile(
+                        // tileColor: Colors.white,
+                        iconColor: Colors.teal,
+                        textColor: Colors.teal,
+                        leading: Icon(
+                          Icons.phone,
+                        ),
+                        title: Text("(00226) 64373649/ 62686231"),
                       ),
-                      title: Text("(00226) 64373649/ 62686231"),
                     ),
                   ),
-                  Card(
-                    child: ListTile(
-                      // tileColor: Colors.white,
-                      iconColor: Colors.teal,
-                      textColor: Colors.teal,
-                      leading: Icon(
-                        Icons.mail,
+                  Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 50.0, vertical: 8.0),
+                    child: Card(
+                      child: ListTile(
+                        // tileColor: Colors.white,
+                        iconColor: Colors.teal,
+                        textColor: Colors.teal,
+                        leading: Icon(
+                          Icons.mail,
+                        ),
+                        title: Text("kidchris960@gmail.com"),
                       ),
-                      title: Text("kidchris960@gmail.com"),
                     ),
                   ),
                 ]),
