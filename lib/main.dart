@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: Center(
@@ -15,13 +16,20 @@ class MyApp extends StatelessWidget {
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  CircleAvatar(
-                    backgroundImage: AssetImage("./assets/chris.jpg"),
-                    radius: 100.0,
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("./assets/chris.jpg"),
+                      radius: 100.0,
+                    ),
                   ),
                   Text(
-                    "Kinda Christian",
-                    style: TextStyle(color: Colors.white),
+                    "KINDA Christian",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "Fredericka",
+                        fontSize: 35,
+                        letterSpacing: 2.0),
                   ),
                   Divider(
                     thickness: 3.0,
@@ -31,11 +39,14 @@ class MyApp extends StatelessWidget {
                   ),
                   Text(
                     "Passionate Data Scientist",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "Insomnia",
+                        fontSize: 25),
                   ),
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(horizontal: 50.0, vertical: 8.0),
+                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
                     child: Card(
                       child: ListTile(
                         // tileColor: Colors.white,
@@ -44,13 +55,18 @@ class MyApp extends StatelessWidget {
                         leading: Icon(
                           Icons.phone,
                         ),
-                        title: Text("(00226) 64373649/ 62686231"),
+                        title: Text(
+                          "(00226) 64373649/62686231",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(horizontal: 50.0, vertical: 8.0),
+                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
                     child: Card(
                       child: ListTile(
                         // tileColor: Colors.white,
@@ -59,7 +75,12 @@ class MyApp extends StatelessWidget {
                         leading: Icon(
                           Icons.mail,
                         ),
-                        title: Text("kidchris960@gmail.com"),
+                        title: Text(
+                          "kidchris960@gmail.com",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ),
